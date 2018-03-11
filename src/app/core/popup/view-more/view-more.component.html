@@ -1,0 +1,41 @@
+<div class="view-more-popup">
+  <div class="header">
+    <h1>View More</h1>
+  </div>
+  <div class="body">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card red-bg">
+          <div class="icon"><img src="../../assets/img/running.png" class="img-responsive" alt=""></div>
+          <div class="box-desc"><p class="title">Running</p><p class="text"><strong>{{vehicle_Item.vehicleRunning}}</strong></p></div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card blue-bg">
+          <div class="icon"><img src="../../assets/img/time.png" class="img-responsive" alt=""></div>
+          <div class="box-desc"><p class="title">Running Duration</p><p class="text"><strong>{{vehicle_Item.vehicleRunningDuration}}</strong></p></div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card yellow-bg">
+          <div class="icon"><img src="../../assets/img/earth.png" class="img-responsive" alt=""></div>
+          <div class="box-desc"><p class="title">Stop Duration</p><p class="text"><strong>{{vehicle_Item.stopDuration}}</strong></p></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="address">
+          <p class="title-text">Last Address</p>
+          <p>{{vehicle_Item.lastAddress}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="btns">
+      <button type="button" class="btn btn-primary" (click)="onCloseConfirm()">OK</button>
+      <button type="button" class="btn btn-default" (click)="onCloseCancel()">CANCEL</button>
+    </div>
+  </div>
+</div>

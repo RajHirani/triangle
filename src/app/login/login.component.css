@@ -1,0 +1,26 @@
+.login-form{
+    min-height: 100vh;
+    display: table;
+    margin:0 auto;
+    width: 100%;
+    height: auto;
+}
+.login-form .table-cell{
+    min-height:100vh;
+    height: auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+.login-form .logo{
+    margin: 0 auto 30px;
+    width: 220px;
+}
+.container-fluid{
+    background: #ddd;
+}
+@media(max-width:767px){
+    .login-form .logo{
+        margin: 0 auto 20px;
+        width: 160px;
+    }
+}

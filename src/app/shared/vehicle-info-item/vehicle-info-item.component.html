@@ -1,0 +1,84 @@
+
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    <div class="box card">
+      <div class="box-header">
+        <h1 class="vehicle-name">{{vehicleName}}</h1>
+        <span mdTooltip="{{ignitionStatus === true ? 'ONLINE' : 'OFFLINE'}}"
+        mdTooltipPosition="after">
+            <div  class="active-dot" [ngClass] = "{'on': ignitionStatus === true }" >
+              <div class="dot"></div> <div class="pulse"></div>
+            </div>
+          </span>
+        
+      </div>
+      <div class="details">
+          <div class="row">
+            <div class="col-xs-12 speedometer">
+                <ngx-gauge [type]="gaugeType" 
+                    [value]="gaugeValue" 
+                    [label]="gaugeLabel"  
+                    [append]="gaugeAppendText"
+                    [thick]="thickValue"
+                    [cap]="capValue"
+                    [foregroundColor]="coloeValue"
+                    [min]="minValue"
+                    [max]="maxValue"
+                    [size]= "sizeValue">
+                </ngx-gauge>
+            </div>
+            <div class="col-xs-12 info">
+              <div class="ignition info-width" [ngClass] = "{'active': ignitionStatus === true }">
+                <p class="inline-style">Ignition</p>
+                <h3 *ngIf="ignitionStatus == true">
+                  <img src="../../assets/img/ignition-on.png" class="img-responsive" alt="" width="20px">ON</h3>
+                <h3 *ngIf="ignitionStatus == false"><img src="../../assets/img/ignition.png" class="img-responsive" alt="" width="20px">OFF</h3>
+              </div>
+              <div class="ac info-width" [ngClass] = "{'active': acStatus === true }">
+                  <p class="inline-style">AC</p>
+                  <h3 *ngIf="acStatus == true"><img src="../../assets/img/ac-on.png" class="img-responsive" alt="" width="20px">ON</h3>
+                  <h3 *ngIf="acStatus == false"><img src="../../assets/img/ac.png" class="img-responsive" alt="" width="20px">OFF</h3>
+              </div>
+              <div class="fuel info-width">
+                  <p class="inline-style">Fuel</p>
+                  <div class="progress-div">
+                  <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="70"
+                        aria-valuemin="0" 
+                        aria-valuemax="100"
+                        [style.width.%]="vehicleFuel">
+                            <i class="fa fa-tint"></i>
+                            {{vehicleFuel + '%'}}                            
+                      </div>
+                  </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="box-footer">
+          <div class="btns">
+            <div class="col-xs-12">
+              <div class="row">
+                <div class="col-xs-4 border-right no-padding">
+                    <a class=" btn-white-strok" (click)="openViewMoreDialog()"><i class="ti-fullscreen"></i>View More</a>
+                </div>
+                <div class="col-xs-4 border-right no-padding">
+                    <a class=" btn-white-strok" (click)="openDialog()"><i class="ti-location-pin"></i>Live Track</a>
+                </div>
+                <div class="col-xs-4 no-padding">
+                    <a class=" btn-white-strok"><i class="ti-control-skip-backward"></i>Play Back</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+
+
+

@@ -1,0 +1,53 @@
+.popup-window .popup-header h1{
+    margin: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.popup-window   .popup-msg .card{
+    margin: 20px 0;
+    padding: 10px;
+    color: #000;
+    font-size: 16px;
+    width: 100%;
+    float: left;
+}
+.popup-window   .popup-msg.sucess .card{
+    background: #8EF3C5;
+}
+.popup-window   .popup-msg.warning .card{
+    background: #FFE28C;
+}
+.popup-window   .popup-msg.error .card{
+    background: #FF8F5E;
+}
+.popup-window   .popup-msg.info .card{
+    background: #7CE4FE;
+}
+.popup-footer{
+    width: 100%;
+    float: left;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+.popup-footer .btns{
+    float: right;
+}
+.btn.btn-primary{
+    background-color: #DD0330;
+    border: 1px solid #DD0330;
+    color: #fff;
+    min-width: 100px;
+    width: auto;
+    border-radius: 2px;
+}
+.btn.btn-default{
+    background-color: #666;
+    border: 1px solid #666;
+    color: #fff;
+    width: auto;
+    min-width: 100px;
+    border-radius: 2px;
+}

@@ -1,0 +1,85 @@
+.view-more-popup .header h1{
+    margin: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.view-more-popup  .body{
+    margin: 20px 0;
+}
+.red-bg{
+    background-color:#E63D3A; 
+    width: 100%;
+    float: left;
+}
+.blue-bg{
+    background-color:#17BCD1; 
+    width: 100%;
+    float: left;
+}
+.yellow-bg{
+    background-color:#FD9A14; 
+    width: 100%;
+    float: left;
+}
+.view-more-popup .card{
+    padding: 15px;
+}
+.view-more-popup .card .icon img, .view-more-popup .card .icon{
+    width: 45px;
+    height: 45px;
+    float:left;
+}
+.view-more-popup .box-desc{
+    width: calc(100% - 55px);
+    float: right;
+}
+.view-more-popup .box-desc p{
+    text-align: right;
+    color: #fff;
+}
+.view-more-popup .box-desc p.text{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 0;
+}
+.view-more-popup .box-desc p strong{
+    color: #fff;
+    font-weight: 500;
+}
+.address p.title-text{
+    color: #444;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.address p{
+ font-size: 16px;
+}
+.footer{
+    width: 100%;
+    float: left;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+.footer .btns{
+    float: right;
+}
+.btn.btn-primary{
+    background-color: #DD0330;
+    border: 1px solid #DD0330;
+    color: #fff;
+    min-width: 100px;
+    width: auto;
+    border-radius: 2px;
+}
+.btn.btn-default{
+    background-color: #666;
+    border: 1px solid #666;
+    color: #fff;
+    width: auto;
+    min-width: 100px;
+    border-radius: 2px;
+}
